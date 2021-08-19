@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         cacheResultFile="build/phpunit/test-results"
+         colors="true"
+         columns="max"
+         failOnRisky="true"
+         failOnWarning="true"
+         forceCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         beStrictAboutTodoAnnotatedTests="true"
+         verbose="true"
+>
+
+    <testsuites>
+        <testsuite name="Coding Standards Test Suite">
+            <directory suffix="Test.php">tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <coverage cacheDirectory="build/phpunit/code-coverage"
+              ignoreDeprecatedCodeUnits="true"
+              processUncoveredFiles="true"
+              >
+        <include>
+            <directory suffix=".php">src/</directory>
+        </include>
+
+        <report>
+            <clover outputFile="build/phpunit/logs/clover.xml"/>
+            <html outputDirectory="build/phpunit/logs/html"/>
+        </report>
+    </coverage>
+
+    <extensions>
+        <extension class="Nexus\PHPUnit\Extension\Tachycardia" />
+    </extensions>
+</phpunit>

@@ -1,0 +1,26 @@
+includes:
+  - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+  tmpDir: build/phpstan
+  level: 8
+  paths:
+    - src
+    - tests
+  bootstrapFiles:
+    - vendor/autoload.php
+  parallel:
+    processTimeout: 300.0
+  polluteScopeWithLoopInitialAssignments: false
+  polluteScopeWithAlwaysIterableForeach: false
+  checkAlwaysTrueCheckTypeFunctionCall: true
+  checkAlwaysTrueInstanceof: true
+  checkAlwaysTrueStrictComparison: true
+  checkExplicitMixedMissingReturn: true
+  checkFunctionNameCase: true
+  checkInternalClassCaseSensitivity: true
+  checkMissingClosureNativeReturnTypehintRule: true
+  checkTooWideReturnTypesInProtectedAndPublicMethods: true
+  reportMaybesInMethodSignatures: true
+  reportStaticMethodSignatures: true
+  treatPhpDocTypesAsCertain: false
