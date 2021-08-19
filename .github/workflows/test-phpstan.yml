@@ -1,0 +1,78 @@
+name: PHPStan Static Analysis
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  pull_request:
+    paths:
+      - '**.php'
+      - '**.neon.dist'
+      - '.github/workflows/**'
+      - composer.json
+      - phpunit.xml.dist
+  push:
+    paths:
+      - '**.php'
+      - '**.neon.dist'
+      - '.github/workflows/**'
+      - composer.json
+      - phpunit.xml.dist
+
+jobs:
+  static-analyses:
+    name: PHPStan Static Analysis [PHP ${{ matrix.php-version }}]
+    runs-on: ubuntu-20.04
+
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - '7.3'
+          - '7.4'
+          - '8.0'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: tokenizer
+          coverage: none
+
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: composer-${{ runner.os }}-${{ matrix.php-version }}-${{ hashFiles('**/composer.*') }}
+          restore-keys: |
+            composer-${{ runner.os }}-${{ matrix.php-version }}-
+            composer-${{ runner.os }}-
+            composer-
+
+      - name: Create PHPStan cache directory
+        run: mkdir --parents build/phpstan
+
+      - name: Cache PHPStan cache directory
+        uses: actions/cache@v2
+        with:
+          path: build/phpstan
+          key: phpstan-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            phpstan-${{ runner.os }}-
+            phpstan-
+
+      - name: Setup Composer's GitHub OAuth access
+        run: composer config --global github-oauth.github.com ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Install dependencies
+        run: composer update --ansi --no-interaction
+
+      - name: Run PHPStan
+        run: vendor/bin/phpstan analyse --ansi

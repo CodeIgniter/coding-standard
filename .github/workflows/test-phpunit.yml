@@ -1,0 +1,88 @@
+name: Unit Tests
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  pull_request:
+    paths:
+      - '**.php'
+      - '**.neon.dist'
+      - '.github/workflows/**'
+      - composer.json
+      - phpunit.xml.dist
+  push:
+    paths:
+      - '**.php'
+      - '**.neon.dist'
+      - '.github/workflows/**'
+      - composer.json
+      - phpunit.xml.dist
+
+jobs:
+  unit-tests:
+    name: PHPUnit Tests [PHP ${{ matrix.php-version }}]
+    runs-on: ubuntu-20.04
+
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - '7.3'
+          - '7.4'
+          - '8.0'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: tokenizer
+          coverage: xdebug
+
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: composer-${{ runner.os }}-${{ matrix.php-version }}-${{ hashFiles('**/composer.*') }}
+          restore-keys: |
+            composer-${{ runner.os }}-${{ matrix.php-version }}-
+            composer-${{ runner.os }}-
+            composer-
+
+      - name: Setup Composer's GitHub OAuth access
+        run: composer config --global github-oauth.github.com ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Install dependencies
+        run: composer update --ansi --no-interaction
+
+      - name: Run Coding Standards Test Suite
+        run: vendor/bin/phpunit --colors=always
+
+      - name: Upload coverage results to Coveralls
+        run: |
+          composer global require --ansi php-coveralls/php-coveralls
+          php-coveralls --verbose --coverage_clover=build/phpunit/logs/clover.xml --json_path=build/phpunit/logs/coverage-upload.json
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_PARALLEL: true
+          COVERALLS_FLAG_NAME: PHP ${{ matrix.php-version }}
+
+  coveralls-upload:
+    name: Trigger parallel build webhook on Coveralls
+    runs-on: ubuntu-20.04
+    needs:
+      - unit-tests
+
+    steps:
+      - name: Upload to Coveralls API
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
