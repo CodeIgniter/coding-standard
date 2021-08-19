@@ -1,0 +1,44 @@
+{
+    "name": "codeigniter/coding-standard",
+    "type": "library",
+    "description": "Official Coding Standards for CodeIgniter based on PHP CS Fixer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Paul E. Balandan, CPA",
+            "email": "paulbalandan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "nexusphp/cs-config": "^3.2"
+    },
+    "require-dev": {
+        "nexusphp/tachycardia": "^1.3",
+        "phpstan/phpstan": "^0.12.94",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeIgniter\\CodingStandard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodeIgniter\\CodingStandard\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "forum": "http://forum.codeigniter.com/",
+        "source": "https://github.com/CodeIgniter/coding-standard",
+        "slack": "https://codeigniterchat.slack.com"
+    }
+}
