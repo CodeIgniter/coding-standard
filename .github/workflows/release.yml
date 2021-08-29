@@ -1,0 +1,26 @@
+name: release
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  build:
+    name: Create a release
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: CodeIgniter Coding Standard ${{ github.ref }}
+          draft: true
+          prerelease: false
+          body: |
+            Please refer to the [CHANGELOG](CHANGELOG.md) for the detailed list of changes.
