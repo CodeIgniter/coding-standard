@@ -13,7 +13,7 @@
         "php": "^7.3 || ^8.0",
         "ext-tokenizer": "*",
         "friendsofphp/php-cs-fixer": "^3.1",
-        "nexusphp/cs-config": "^3.2"
+        "nexusphp/cs-config": "^3.3"
     },
     "require-dev": {
         "nexusphp/tachycardia": "^1.3",
