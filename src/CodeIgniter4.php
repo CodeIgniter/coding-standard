@@ -83,8 +83,8 @@ final class CodeIgniter4 extends AbstractRuleset
                 'multi_line_extends_each_single_line' => true,
                 'single_item_single_line'             => true,
                 'single_line'                         => true,
+                'space_before_parenthesis'            => true,
             ],
-            'class_keyword_remove'       => false,
             'clean_namespace'            => true,
             'combine_consecutive_issets' => true,
             'combine_consecutive_unsets' => true,
@@ -104,6 +104,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'constant_case'                        => ['case' => 'lower'],
             'date_time_immutable'                  => false,
             'declare_equal_normalize'              => ['space' => 'none'],
+            'declare_parentheses'                  => true,
             'declare_strict_types'                 => false,
             'dir_constant'                         => true,
             'doctrine_annotation_array_assignment' => false,
@@ -116,6 +117,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'shorten_simple_statements_only' => false,
             ],
             'elseif'            => true,
+            'empty_loop_body'   => ['style' => 'braces'],
             'encoding'          => true,
             'ereg_to_preg'      => true,
             'error_suppression' => [
@@ -520,6 +522,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'elements'      => ['arrays'],
             ],
             'trim_array_spaces'               => true,
+            'types_spaces'                    => ['space' => 'none'],
             'unary_operator_spaces'           => true,
             'use_arrow_functions'             => false, // requires PHP7.4+
             'visibility_required'             => ['elements' => ['const', 'method', 'property']],
