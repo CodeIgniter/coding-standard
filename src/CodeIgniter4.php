@@ -27,12 +27,13 @@ final class CodeIgniter4 extends AbstractRuleset
         $this->name = 'CodeIgniter4 Coding Standards';
 
         $this->rules = [
-            'align_multiline_comment' => ['comment_type' => 'phpdocs_only'],
-            'array_indentation'       => true,
-            'array_push'              => true,
-            'array_syntax'            => ['syntax' => 'short'],
-            'backtick_to_shell_exec'  => true,
-            'binary_operator_spaces'  => [
+            'align_multiline_comment'                  => ['comment_type' => 'phpdocs_only'],
+            'array_indentation'                        => true,
+            'array_push'                               => true,
+            'array_syntax'                             => ['syntax' => 'short'],
+            'assign_null_coalescing_to_coalesce_equal' => false, // requires 7.4+
+            'backtick_to_shell_exec'                   => true,
+            'binary_operator_spaces'                   => [
                 'default'   => 'single_space',
                 'operators' => [
                     '='  => 'align_single_space_minimal',
@@ -99,28 +100,30 @@ final class CodeIgniter4 extends AbstractRuleset
                     'phpstan-ignore-next-line',
                 ],
             ],
-            'compact_nullable_typehint'            => true,
-            'concat_space'                         => ['spacing' => 'one'],
-            'constant_case'                        => ['case' => 'lower'],
-            'date_time_immutable'                  => false,
-            'declare_equal_normalize'              => ['space' => 'none'],
-            'declare_parentheses'                  => true,
-            'declare_strict_types'                 => false,
-            'dir_constant'                         => true,
-            'doctrine_annotation_array_assignment' => false,
-            'doctrine_annotation_braces'           => false,
-            'doctrine_annotation_indentation'      => false,
-            'doctrine_annotation_spaces'           => false,
-            'echo_tag_syntax'                      => [
+            'compact_nullable_typehint'               => true,
+            'concat_space'                            => ['spacing' => 'one'],
+            'constant_case'                           => ['case' => 'lower'],
+            'control_structure_continuation_position' => ['position' => 'same_line'],
+            'date_time_immutable'                     => false,
+            'declare_equal_normalize'                 => ['space' => 'none'],
+            'declare_parentheses'                     => true,
+            'declare_strict_types'                    => false,
+            'dir_constant'                            => true,
+            'doctrine_annotation_array_assignment'    => false,
+            'doctrine_annotation_braces'              => false,
+            'doctrine_annotation_indentation'         => false,
+            'doctrine_annotation_spaces'              => false,
+            'echo_tag_syntax'                         => [
                 'format'                         => 'short',
                 'long_function'                  => 'echo',
                 'shorten_simple_statements_only' => false,
             ],
-            'elseif'            => true,
-            'empty_loop_body'   => ['style' => 'braces'],
-            'encoding'          => true,
-            'ereg_to_preg'      => true,
-            'error_suppression' => [
+            'elseif'               => true,
+            'empty_loop_body'      => ['style' => 'braces'],
+            'empty_loop_condition' => ['style' => 'while'],
+            'encoding'             => true,
+            'ereg_to_preg'         => true,
+            'error_suppression'    => [
                 'mute_deprecation_error'         => true,
                 'noise_remaining_usages'         => false,
                 'noise_remaining_usages_exclude' => [],
@@ -177,6 +180,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'include'                     => true,
             'increment_style'             => ['style' => 'post'],
             'indentation_type'            => true,
+            'integer_literal_case'        => true,
             'is_null'                     => true,
             'lambda_not_used_import'      => true,
             'line_ending'                 => true,
@@ -195,6 +199,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'on_multiline'                     => 'ensure_fully_multiline',
             ],
             'method_chaining_indentation'                 => true,
+            'modernize_strpos'                            => false, // requires 8.0+
             'modernize_types_casting'                     => true,
             'multiline_comment_opening_closing'           => true,
             'multiline_whitespace_before_semicolons'      => ['strategy' => 'no_multi_line'],
@@ -225,6 +230,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'no_php4_constructor'                         => true,
             'no_short_bool_cast'                          => true,
             'no_singleline_whitespace_before_semicolons'  => true,
+            'no_space_around_double_colon'                => true,
             'no_spaces_after_function_name'               => true,
             'no_spaces_around_offset'                     => ['positions' => ['inside', 'outside']],
             'no_spaces_inside_parenthesis'                => true,
@@ -267,6 +273,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'not_operator_with_successor_space'                => true,
             'nullable_type_declaration_for_default_null_value' => ['use_nullable_type_declaration' => true],
             'object_operator_without_whitespace'               => true,
+            'octal_notation'                                   => false, // requires 8.1+
             'operator_linebreak'                               => ['only_booleans' => true, 'position' => 'beginning'],
             'ordered_class_elements'                           => false,
             'ordered_imports'                                  => [
@@ -510,6 +517,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'static_lambda'                     => true,
             'strict_comparison'                 => true,
             'strict_param'                      => true,
+            'string_length_to_empty'            => true,
             'string_line_ending'                => true,
             'switch_case_semicolon_to_colon'    => true,
             'switch_case_space'                 => true,
