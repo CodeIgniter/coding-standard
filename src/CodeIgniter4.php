@@ -74,10 +74,10 @@ final class CodeIgniter4 extends AbstractRuleset
             'cast_spaces'                 => ['space' => 'single'],
             'class_attributes_separation' => [
                 'elements' => [
-                    // 'const' => 'only_if_meta', // @todo Enable in php-cs-fixer v3.1
-                    // 'property' => 'only_if_meta', // @todo Enable in php-cs-fixer v3.1
-                    'method' => 'one',
-                    // 'trait_import' => 'none', // @todo Enable when bug is fixed
+                    'const'        => 'none',
+                    'property'     => 'none',
+                    'method'       => 'one',
+                    'trait_import' => 'none',
                 ],
             ],
             'class_definition' => [
