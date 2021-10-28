@@ -171,7 +171,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'fix_inline'     => true,
                 'replacements'   => ['inheritDocs' => 'inheritDoc'],
             ],
-            'global_namespace_import'     => false,
+            'global_namespace_import'     => true,
             'group_import'                => false,
             'header_comment'              => false, // false by default
             'heredoc_indentation'         => ['indentation' => 'start_plus_one'],
