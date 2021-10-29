@@ -57,7 +57,7 @@ jobs:
             composer-
 
       - name: Setup Composer's GitHub OAuth access
-        run: composer config --global github-oauth.github.com ${{ secrets.ACCESS_TOKEN }}
+        run: composer config --global github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: composer update --ansi --no-interaction
