@@ -171,7 +171,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'fix_inline'     => true,
                 'replacements'   => ['inheritDocs' => 'inheritDoc'],
             ],
-            'global_namespace_import'     => [
+            'global_namespace_import' => [
                 'import_constants' => false,
                 'import_functions' => false,
                 'import_classes'   => true,
