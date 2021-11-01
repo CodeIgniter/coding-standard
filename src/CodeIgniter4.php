@@ -279,8 +279,16 @@ final class CodeIgniter4 extends AbstractRuleset
             'object_operator_without_whitespace'               => true,
             'octal_notation'                                   => false, // requires 8.1+
             'operator_linebreak'                               => ['only_booleans' => true, 'position' => 'beginning'],
-            'ordered_class_elements'                           => false,
-            'ordered_imports'                                  => [
+            'ordered_class_elements'                           => [
+                'order' => [
+                    'use_trait',
+                    'constant',
+                    'property',
+                    'method',
+                ],
+                'sort_algorithm' => 'none',
+            ],
+            'ordered_imports' => [
                 'sort_algorithm' => 'alpha',
                 'imports_order'  => ['class', 'function', 'const'],
             ],
