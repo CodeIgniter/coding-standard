@@ -3,7 +3,7 @@ includes:
 
 parameters:
   tmpDir: build/phpstan
-  level: 8
+  level: 9
   paths:
     - src
     - tests
@@ -19,7 +19,6 @@ parameters:
   checkExplicitMixedMissingReturn: true
   checkFunctionNameCase: true
   checkInternalClassCaseSensitivity: true
-  checkMissingClosureNativeReturnTypehintRule: true
   checkTooWideReturnTypesInProtectedAndPublicMethods: true
   reportMaybesInMethodSignatures: true
   reportStaticMethodSignatures: true

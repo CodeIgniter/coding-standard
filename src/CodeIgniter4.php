@@ -31,7 +31,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'array_indentation'                        => true,
             'array_push'                               => true,
             'array_syntax'                             => ['syntax' => 'short'],
-            'assign_null_coalescing_to_coalesce_equal' => false, // requires 7.4+
+            'assign_null_coalescing_to_coalesce_equal' => true,
             'backtick_to_shell_exec'                   => true,
             'binary_operator_spaces'                   => [
                 'default'   => 'single_space',
@@ -544,7 +544,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'trim_array_spaces'               => true,
             'types_spaces'                    => ['space' => 'none'],
             'unary_operator_spaces'           => true,
-            'use_arrow_functions'             => false, // requires PHP7.4+
+            'use_arrow_functions'             => true,
             'visibility_required'             => ['elements' => ['const', 'method', 'property']],
             'void_return'                     => false, // changes method signature
             'whitespace_after_comma_in_array' => true,
@@ -556,7 +556,7 @@ final class CodeIgniter4 extends AbstractRuleset
             ],
         ];
 
-        $this->requiredPHPVersion = 70300;
+        $this->requiredPHPVersion = 70400;
 
         $this->autoActivateIsRiskyAllowed = true;
     }
