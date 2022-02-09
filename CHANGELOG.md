@@ -4,6 +4,10 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.4.0](https://github.com/CodeIgniter/coding-standard/compare/v1.3.0...v1.4.0) - 2022-02-09
+
+- Permit use of latest php-cs-fixer v3.6.0
+
 ## [v1.3.0](https://github.com/CodeIgniter/coding-standard/compare/v1.2.0...v1.3.0) - 2022-01-15
 
 - Fix GHA workflows
