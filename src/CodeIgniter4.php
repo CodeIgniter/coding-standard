@@ -86,11 +86,12 @@ final class CodeIgniter4 extends AbstractRuleset
                 'single_line'                         => true,
                 'space_before_parenthesis'            => true,
             ],
-            'clean_namespace'            => true,
-            'combine_consecutive_issets' => true,
-            'combine_consecutive_unsets' => true,
-            'combine_nested_dirname'     => true,
-            'comment_to_phpdoc'          => [
+            'class_reference_name_casing' => true,
+            'clean_namespace'             => true,
+            'combine_consecutive_issets'  => true,
+            'combine_consecutive_unsets'  => true,
+            'combine_nested_dirname'      => true,
+            'comment_to_phpdoc'           => [
                 'ignored_tags' => [
                     'todo',
                     'codeCoverageIgnore',
@@ -171,7 +172,8 @@ final class CodeIgniter4 extends AbstractRuleset
                 'fix_inline'     => true,
                 'replacements'   => ['inheritDocs' => 'inheritDoc'],
             ],
-            'global_namespace_import' => [
+            'get_class_to_class_keyword' => false,
+            'global_namespace_import'    => [
                 'import_constants' => false,
                 'import_functions' => false,
                 'import_classes'   => true,
@@ -262,6 +264,7 @@ final class CodeIgniter4 extends AbstractRuleset
             ],
             'no_unneeded_curly_braces'                         => ['namespaces' => true],
             'no_unneeded_final_method'                         => ['private_methods' => true],
+            'no_unneeded_import_alias'                         => true,
             'no_unreachable_default_argument_value'            => true,
             'no_unset_cast'                                    => true,
             'no_unset_on_property'                             => false,
