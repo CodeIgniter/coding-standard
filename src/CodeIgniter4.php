@@ -86,6 +86,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'single_item_single_line'             => true,
                 'single_line'                         => true,
                 'space_before_parenthesis'            => true,
+                'inline_constructor_arguments'        => true,
             ],
             'class_reference_name_casing' => true,
             'clean_namespace'             => true,
