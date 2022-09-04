@@ -105,6 +105,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'compact_nullable_typehint'               => true,
             'concat_space'                            => ['spacing' => 'one'],
             'constant_case'                           => ['case' => 'lower'],
+            'control_structure_braces'                => true,
             'control_structure_continuation_position' => ['position' => 'same_line'],
             'date_time_immutable'                     => false,
             'declare_equal_normalize'                 => ['space' => 'none'],
