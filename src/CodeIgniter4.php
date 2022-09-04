@@ -234,6 +234,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'no_leading_namespace_whitespace'             => true,
             'no_mixed_echo_print'                         => ['use' => 'echo'],
             'no_multiline_whitespace_around_double_arrow' => true,
+            'no_multiple_statements_per_line'             => true,
             'no_null_property_initialization'             => true,
             'no_php4_constructor'                         => true,
             'no_short_bool_cast'                          => true,
