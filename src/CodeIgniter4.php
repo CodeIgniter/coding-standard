@@ -543,6 +543,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'space_after_semicolon'             => ['remove_in_empty_for_expressions' => true],
             'standardize_increment'             => true,
             'standardize_not_equals'            => true,
+            'statement_indentation'             => true,
             'static_lambda'                     => true,
             'strict_comparison'                 => true,
             'strict_param'                      => true,
