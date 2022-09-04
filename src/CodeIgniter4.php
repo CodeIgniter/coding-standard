@@ -64,7 +64,8 @@ final class CodeIgniter4 extends AbstractRuleset
                     'yield_from',
                 ],
             ],
-            'braces' => [
+            'blank_line_between_import_groups' => true,
+            'braces'                           => [
                 'allow_single_line_anonymous_class_with_empty_body' => true,
                 'allow_single_line_closure'                         => true,
                 'position_after_anonymous_constructs'               => 'same',
