@@ -250,6 +250,14 @@ final class CodeIgniter4 extends AbstractRuleset
                 'allow_unused_params' => true,
                 'remove_inheritdoc'   => false,
             ],
+            'no_trailing_comma_in_singleline' => [
+                'elements' => [
+                    'arguments',
+                    'array_destructuring',
+                    'array',
+                    'group_import',
+                ],
+            ],
             'no_trailing_whitespace'            => true,
             'no_trailing_whitespace_in_comment' => true,
             'no_trailing_whitespace_in_string'  => true,
