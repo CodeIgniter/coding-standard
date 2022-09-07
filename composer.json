@@ -1,6 +1,7 @@
 {
     "name": "codeigniter/coding-standard",
     "type": "library",
+    "keywords": [ "phpcs", "static analysis" ],
     "description": "Official Coding Standards for CodeIgniter based on PHP CS Fixer",
     "license": "MIT",
     "authors": [
