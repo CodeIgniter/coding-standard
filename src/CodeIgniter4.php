@@ -485,6 +485,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'single_class_element_per_statement' => ['elements' => ['const', 'property']],
             'single_import_per_statement'        => true,
             'single_line_after_imports'          => true,
+            'single_line_comment_spacing'        => true,
             'single_line_comment_style'          => ['comment_types' => ['asterisk', 'hash']],
             'single_line_throw'                  => false,
             'single_quote'                       => ['strings_containing_single_quote_chars' => false],
