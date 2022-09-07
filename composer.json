@@ -1,15 +1,23 @@
 {
     "name": "codeigniter/coding-standard",
-    "type": "library",
-    "keywords": [ "phpcs", "static analysis" ],
     "description": "Official Coding Standards for CodeIgniter based on PHP CS Fixer",
     "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "phpcs",
+        "static analysis"
+    ],
     "authors": [
         {
             "name": "John Paul E. Balandan, CPA",
             "email": "paulbalandan@gmail.com"
         }
     ],
+    "support": {
+        "forum": "http://forum.codeigniter.com/",
+        "source": "https://github.com/CodeIgniter/coding-standard",
+        "slack": "https://codeigniterchat.slack.com"
+    },
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-tokenizer": "*",
@@ -21,11 +29,8 @@
         "phpstan/phpstan": "^1.0",
         "phpunit/phpunit": "^9.5"
     },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "CodeIgniter\\CodingStandard\\": "src/"
@@ -36,11 +41,9 @@
             "CodeIgniter\\CodingStandard\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "support": {
-        "forum": "http://forum.codeigniter.com/",
-        "source": "https://github.com/CodeIgniter/coding-standard",
-        "slack": "https://codeigniterchat.slack.com"
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
     }
 }
