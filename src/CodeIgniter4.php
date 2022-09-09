@@ -159,8 +159,11 @@ final class CodeIgniter4 extends AbstractRuleset
             'fopen_flags'                            => ['b_mode' => true],
             'full_opening_tag'                       => true,
             'fully_qualified_strict_types'           => true,
-            'function_declaration'                   => ['closure_function_spacing' => 'one'],
-            'function_to_constant'                   => [
+            'function_declaration'                   => [
+                'closure_function_spacing'   => 'one',
+                'trailing_comma_single_line' => false,
+            ],
+            'function_to_constant' => [
                 'functions' => [
                     'get_called_class',
                     'get_class',
