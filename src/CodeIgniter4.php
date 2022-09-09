@@ -402,8 +402,10 @@ final class CodeIgniter4 extends AbstractRuleset
             'phpdoc_no_empty_return'       => false,
             'phpdoc_no_package'            => true,
             'phpdoc_no_useless_inheritdoc' => true,
-            'phpdoc_order'                 => true,
-            'phpdoc_order_by_value'        => [
+            'phpdoc_order'                 => [
+                'order' => ['param', 'return', 'throws'],
+            ],
+            'phpdoc_order_by_value' => [
                 'annotations' => [
                     'author',
                     'covers',
