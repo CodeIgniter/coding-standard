@@ -117,6 +117,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'allow_single_line_empty_anonymous_classes' => true,
                 'allow_single_line_anonymous_functions'     => true,
             ],
+            'date_time_create_from_format_call'    => true,
             'date_time_immutable'                  => false,
             'declare_equal_normalize'              => ['space' => 'none'],
             'declare_parentheses'                  => true,
