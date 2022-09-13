@@ -587,8 +587,11 @@ final class CodeIgniter4 extends AbstractRuleset
                 'after_heredoc' => true,
                 'elements'      => ['arrays'],
             ],
-            'trim_array_spaces'               => true,
-            'types_spaces'                    => ['space' => 'none'],
+            'trim_array_spaces' => true,
+            'types_spaces'      => [
+                'space'                => 'none',
+                'space_multiple_catch' => 'none',
+            ],
             'unary_operator_spaces'           => true,
             'use_arrow_functions'             => true,
             'visibility_required'             => ['elements' => ['const', 'method', 'property']],
