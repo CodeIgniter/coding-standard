@@ -4,6 +4,33 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.5.0](https://github.com/CodeIgniter/coding-standard/compare/v1.4.0...v1.5.0) - 2022-09-13
+
+- Enable `ensure_single_space` option of `whitespace_after_comma_in_array`
+- Use the `space_multiple_catch` option of `types_spaces`
+- Fix multi-lines
+- Add `group_to_single_imports` option to `single_import_per_statement`
+- chore: fix editorconfig (#4)
+- docs: add CONTRIBUTING.md (#3)
+- Enable `date_time_create_from_format_call`
+- Add options to `new_with_braces`
+- Add `order` option to `phpdoc_order`
+- Add the `trailing_comma_single_line` option to `function_declaration`
+- Enable `curly_braces_position`
+- Enable `single_line_comment_spacing`
+- Enable `no_trailing_comma_in_singleline`
+- Normalize composer.json
+- Add "static analysis" Composer keyword (#2)
+- Add `inline_constructor_arguments` option to `class_definition`
+- Enable `statement_indentation`
+- Enable `no_useless_nullsafe_operator`
+- Enable `no_multiple_statements_per_line`
+- Enable `control_structure_braces`
+- Enable `blank_line_between_import_groups`
+- Remove deprecated fixers
+- Configure `groups` option in `phpdoc_separation` rule
+- Bump php-cs-fixer version
+
 ## [v1.4.0](https://github.com/CodeIgniter/coding-standard/compare/v1.3.0...v1.4.0) - 2022-02-09
 
 - Permit use of latest php-cs-fixer v3.6.0
