@@ -596,7 +596,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'use_arrow_functions'             => true,
             'visibility_required'             => ['elements' => ['const', 'method', 'property']],
             'void_return'                     => false, // changes method signature
-            'whitespace_after_comma_in_array' => true,
+            'whitespace_after_comma_in_array' => ['ensure_single_space' => true],
             'yoda_style'                      => [
                 'equal'                => false,
                 'identical'            => null,
