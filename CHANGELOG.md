@@ -4,6 +4,12 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.6.0](https://github.com/CodeIgniter/coding-standard/compare/v1.5.0...v1.6.0) - 2022-10-15
+
+- Bump php-cs-fixer version to v3.12 minimum
+- Enable `no_useless_concat_operator`
+- Update action workflows
+
 ## [v1.5.0](https://github.com/CodeIgniter/coding-standard/compare/v1.4.0...v1.5.0) - 2022-09-13
 
 - Enable `ensure_single_space` option of `whitespace_after_comma_in_array`
