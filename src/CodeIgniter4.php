@@ -18,7 +18,7 @@ use Nexus\CsConfig\Ruleset\AbstractRuleset;
 /**
  * Defines the ruleset used for the CodeIgniter4 organization.
  *
- * @internal
+ * {@internal Use of this class is not covered by the backward compatibility promise for CodeIgniter4.}
  */
 final class CodeIgniter4 extends AbstractRuleset
 {
