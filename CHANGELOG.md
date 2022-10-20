@@ -4,7 +4,7 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [v1.6.1](https://github.com/CodeIgniter/coding-standard/compare/v1.6.0...v1.6.1) - 2022-10-20
 
 - Changed `@internal` description of class CodeIgniter4 to avoid warnings in phpstorm
 
