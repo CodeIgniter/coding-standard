@@ -455,6 +455,7 @@ final class CodeIgniter4 extends AbstractRuleset
                     ['phpstan-pure', 'psalm-pure'],
                     ['readonly', 'psalm-readonly'],
                     ['return', 'phpstan-return', 'psalm-return'],
+                    ['runTestsInSeparateProcess', 'runInSeparateProcess', 'preserveGlobalState'],
                     ['template', 'phpstan-template', 'psalm-template'],
                     ['template-covariant', 'phpstan-template-covariant', 'psalm-template-covariant'],
                     ['phpstan-type', 'psalm-type'],
