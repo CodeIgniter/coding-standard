@@ -182,6 +182,7 @@ final class CodeIgniter4 extends AbstractRuleset
                     'package',
                     'subpackage',
                 ],
+                'case_sensitive' => false,
             ],
             'general_phpdoc_tag_rename' => [
                 'case_sensitive' => false,
