@@ -65,8 +65,8 @@ final class CodeIgniter4 extends AbstractRuleset
                 ],
             ],
             'blank_line_between_import_groups' => true,
-            'cast_spaces'                 => ['space' => 'single'],
-            'class_attributes_separation' => [
+            'cast_spaces'                      => ['space' => 'single'],
+            'class_attributes_separation'      => [
                 'elements' => [
                     'const'        => 'none',
                     'property'     => 'none',
@@ -506,8 +506,10 @@ final class CodeIgniter4 extends AbstractRuleset
             'single_line_comment_style'          => ['comment_types' => ['asterisk', 'hash']],
             'single_line_throw'                  => false,
             'single_quote'                       => ['strings_containing_single_quote_chars' => false],
-            'single_space_after_construct'       => [
-                'constructs' => [
+            'single_space_around_construct'      => [
+                'constructs_contain_a_single_space'     => ['yield_from'],
+                'constructs_preceded_by_a_single_space' => ['use_lambda'],
+                'constructs_followed_by_a_single_space' => [
                     'abstract',
                     'as',
                     'attribute',
@@ -524,6 +526,7 @@ final class CodeIgniter4 extends AbstractRuleset
                     'echo',
                     'else',
                     'elseif',
+                    'enum',
                     'extends',
                     'final',
                     'finally',
@@ -542,6 +545,7 @@ final class CodeIgniter4 extends AbstractRuleset
                     'interface',
                     'match',
                     'named_argument',
+                    'namespace',
                     'new',
                     'open_tag_with_echo',
                     'php_doc',
@@ -550,13 +554,16 @@ final class CodeIgniter4 extends AbstractRuleset
                     'private',
                     'protected',
                     'public',
+                    'readonly',
                     'require',
                     'require_once',
                     'return',
                     'static',
+                    'switch',
                     'throw',
                     'trait',
                     'try',
+                    'type_colon',
                     'use',
                     'use_lambda',
                     'use_trait',
