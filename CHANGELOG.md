@@ -4,6 +4,12 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.3](https://github.com/CodeIgniter/coding-standard/compare/v1.7.2...v1.7.3) - 2023-05-05
+
+- Replace `single_space_after_construct` with `single_space_around_construct`
+- Remove deprecated `braces` rules
+- Bump php-cs-fixer to v3.16
+
 ## [v1.7.2](https://github.com/CodeIgniter/coding-standard/compare/v1.7.1...v1.7.2) - 2023-03-05
 
 - Bump php-cs-fixer to v3.14
