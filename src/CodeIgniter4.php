@@ -313,6 +313,7 @@ final class CodeIgniter4 extends AbstractRuleset
                     'method',
                 ],
                 'sort_algorithm' => 'none',
+                'case_sensitive' => false,
             ],
             'ordered_imports' => [
                 'sort_algorithm' => 'alpha',
