@@ -4,6 +4,13 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.4](https://github.com/CodeIgniter/coding-standard/compare/v1.7.3...v1.7.4) - 2023-06-19
+
+- Bump php-cs-fixer to v3.18
+- fix: ruleset deprecated on `v3.18` (#10)
+- Add case_sensitive option to ordered_class_elements
+- Add missing rules
+
 ## [v1.7.3](https://github.com/CodeIgniter/coding-standard/compare/v1.7.2...v1.7.3) - 2023-05-05
 
 - Replace `single_space_after_construct` with `single_space_around_construct`
