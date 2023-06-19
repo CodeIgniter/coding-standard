@@ -64,13 +64,13 @@ final class CodeIgniter4 extends AbstractRuleset
                     'yield_from',
                 ],
             ],
-            'blank_lines_before_namespace' => [
+            'blank_line_between_import_groups' => true,
+            'blank_lines_before_namespace'     => [
                 'min_line_breaks' => 2,
                 'max_line_breaks' => 2,
             ],
-            'blank_line_between_import_groups' => true,
-            'cast_spaces'                      => ['space' => 'single'],
-            'class_attributes_separation'      => [
+            'cast_spaces'                 => ['space' => 'single'],
+            'class_attributes_separation' => [
                 'elements' => [
                     'const'        => 'none',
                     'property'     => 'none',
