@@ -65,8 +65,12 @@ final class CodeIgniter4 extends AbstractRuleset
                 ],
             ],
             'blank_line_between_import_groups' => true,
-            'cast_spaces'                      => ['space' => 'single'],
-            'class_attributes_separation'      => [
+            'blank_lines_before_namespace'     => [
+                'min_line_breaks' => 2,
+                'max_line_breaks' => 2,
+            ],
+            'cast_spaces'                 => ['space' => 'single'],
+            'class_attributes_separation' => [
                 'elements' => [
                     'const'        => 'none',
                     'property'     => 'none',
@@ -144,8 +148,8 @@ final class CodeIgniter4 extends AbstractRuleset
             'explicit_string_variable'   => true,
             'final_class'                => false,
             'final_internal_class'       => [
-                'annotation_exclude'                         => ['@no-final'],
-                'annotation_include'                         => ['@internal'],
+                'exclude'                                    => ['no-final'],
+                'include'                                    => ['internal'],
                 'consider_absent_docblock_as_internal_class' => false,
             ],
             'final_public_method_for_abstract_class' => false,
@@ -234,7 +238,6 @@ final class CodeIgniter4 extends AbstractRuleset
             'no_binary_string'                            => true,
             'no_blank_lines_after_class_opening'          => true,
             'no_blank_lines_after_phpdoc'                 => true,
-            'no_blank_lines_before_namespace'             => false, // conflicts with `single_blank_line_before_namespace`
             'no_break_comment'                            => ['comment_text' => 'no break'],
             'no_closing_tag'                              => true,
             'no_empty_comment'                            => true,
@@ -501,7 +504,6 @@ final class CodeIgniter4 extends AbstractRuleset
             'simplified_if_return'               => true,
             'simplified_null_return'             => false,
             'single_blank_line_at_eof'           => true,
-            'single_blank_line_before_namespace' => true,
             'single_class_element_per_statement' => ['elements' => ['const', 'property']],
             'single_import_per_statement'        => ['group_to_single_imports' => true],
             'single_line_after_imports'          => true,
