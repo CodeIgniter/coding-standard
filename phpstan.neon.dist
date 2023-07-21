@@ -9,8 +9,6 @@ parameters:
     - tests
   bootstrapFiles:
     - vendor/autoload.php
-  parallel:
-    processTimeout: 300.0
   polluteScopeWithLoopInitialAssignments: false
   polluteScopeWithAlwaysIterableForeach: false
   checkAlwaysTrueCheckTypeFunctionCall: true
