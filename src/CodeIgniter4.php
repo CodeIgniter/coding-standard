@@ -334,6 +334,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 ],
             ],
             'php_unit_data_provider_name'            => false,
+            'php_unit_data_provider_return_type'     => true,
             'php_unit_data_provider_static'          => false,
             'php_unit_dedicate_assert'               => ['target' => 'newest'],
             'php_unit_dedicate_assert_internal_type' => ['target' => 'newest'],
