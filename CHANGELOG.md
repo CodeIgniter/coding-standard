@@ -4,6 +4,10 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.7](https://github.com/CodeIgniter/coding-standard/compare/v1.7.6...v1.7.7) - 2023-08-15
+
+- Specify force option for `php_unit_data_provider_static` fixer
+
 ## [v1.7.6](https://github.com/CodeIgniter/coding-standard/compare/v1.7.5...v1.7.6) - 2023-08-15
 
 - Enable 'php_unit_data_provider_static'
