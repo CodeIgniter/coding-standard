@@ -4,6 +4,16 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.6](https://github.com/CodeIgniter/coding-standard/compare/v1.7.5...v1.7.6) - 2023-08-15
+
+- Enable 'php_unit_data_provider_static'
+- Add new fixers in php-cs-fixer v3.23
+- Add `yield_from_array_to_yields`
+- Enable `php_unit_data_provider_name`
+- Use all available checked tokens for `no_extra_blank_lines`
+- Configure `php_unit_data_provider_return_type`
+- Remove parallel.timeout in phpstan.neon.dist
+
 ## [v1.7.5](https://github.com/CodeIgniter/coding-standard/compare/v1.7.4...v1.7.5) - 2023-07-15
 
 - Configure new fixers in php-cs-fixer v3.20
