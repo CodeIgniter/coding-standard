@@ -336,6 +336,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'ordered_imports' => [
                 'sort_algorithm' => 'alpha',
                 'imports_order'  => ['class', 'function', 'const'],
+                'case_sensitive' => false,
             ],
             'ordered_interfaces' => false,
             'ordered_traits'     => false,
@@ -499,6 +500,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'phpdoc_types_order'                            => [
                 'null_adjustment' => 'always_last',
                 'sort_algorithm'  => 'alpha',
+                'case_sensitive'  => false,
             ],
             'phpdoc_var_annotation_correct_order' => true,
             'phpdoc_var_without_name'             => true,
