@@ -4,6 +4,12 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.9](https://github.com/CodeIgniter/coding-standard/compare/v1.7.8...v1.7.9) - 2023-09-18
+
+- Update release.yml
+- Add `long_to_shorthand_operator` (#13)
+- Bump actions/checkout from 3 to 4 (#12)
+
 ## [v1.7.8](https://github.com/CodeIgniter/coding-standard/compare/v1.7.7...v1.7.8) - 2023-08-30
 
 - Add `case_sensitive` option to order fixers
