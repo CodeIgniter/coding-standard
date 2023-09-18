@@ -207,6 +207,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'linebreak_after_opening_tag' => true,
             'list_syntax'                 => ['syntax' => 'short'],
             'logical_operators'           => true,
+            'long_to_shorthand_operator'  => true,
             'lowercase_cast'              => true,
             'lowercase_keywords'          => true,
             'lowercase_static_reference'  => true,
