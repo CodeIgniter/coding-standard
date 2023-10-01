@@ -4,6 +4,12 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.10](https://github.com/CodeIgniter/coding-standard/compare/v1.7.9...v1.7.10) - 2023-10-01
+
+- Bump to php-cs-fixer v3.34
+- Bump to php-cs-fixer v3.30
+- Fix tag name in release
+
 ## [v1.7.9](https://github.com/CodeIgniter/coding-standard/compare/v1.7.8...v1.7.9) - 2023-09-18
 
 - Update release.yml
