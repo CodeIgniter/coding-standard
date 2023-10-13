@@ -157,7 +157,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'fopen_flag_order'                       => true,
             'fopen_flags'                            => ['b_mode' => true],
             'full_opening_tag'                       => true,
-            'fully_qualified_strict_types'           => true,
+            'fully_qualified_strict_types'           => ['leading_backslash_in_global_namespace' => false],
             'function_declaration'                   => [
                 'closure_function_spacing'   => 'one',
                 'closure_fn_spacing'         => 'one',
@@ -453,8 +453,9 @@ final class CodeIgniter4 extends AbstractRuleset
                     'uses',
                 ],
             ],
-            'phpdoc_param_order'           => false,
-            'phpdoc_return_self_reference' => [
+            'phpdoc_param_order'                       => false,
+            'phpdoc_readonly_class_comment_to_keyword' => false,
+            'phpdoc_return_self_reference'             => [
                 'replacements' => [
                     'this'    => '$this',
                     '@this'   => '$this',
