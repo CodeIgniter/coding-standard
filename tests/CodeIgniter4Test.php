@@ -13,20 +13,21 @@ declare(strict_types=1);
 
 namespace CodeIgniter\CodingStandard\Tests;
 
+use CodeIgniter\CodingStandard\CodeIgniter4;
 use Nexus\CsConfig\Ruleset\RulesetInterface;
 use Nexus\CsConfig\Test\AbstractRulesetTestCase;
 use PhpCsFixer\Preg;
+use PHPUnit\Framework\Attributes\CoversClass;
 
 /**
  * @internal
- *
- * @covers \CodeIgniter\CodingStandard\CodeIgniter4
  */
+#[CoversClass(CodeIgniter4::class)]
 final class CodeIgniter4Test extends AbstractRulesetTestCase
 {
     protected static function createRuleset(): RulesetInterface
     {
-        /** @phpstan-var class-string<RulesetInterface> $ruleset */
+        /** @var class-string<RulesetInterface> $ruleset */
         $ruleset = Preg::replace('/^(CodeIgniter\\\\CodingStandard)\\\\Tests(\\\\\S+)Test/', '$1$2', self::class);
 
         return new $ruleset();
