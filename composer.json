@@ -19,7 +19,7 @@
         "slack": "https://codeigniterchat.slack.com"
     },
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.1",
         "ext-tokenizer": "*",
         "friendsofphp/php-cs-fixer": "^3.50",
         "nexusphp/cs-config": "<=3.18.0"
