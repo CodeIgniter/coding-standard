@@ -658,7 +658,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'space'                => 'none',
                 'space_multiple_catch' => 'none',
             ],
-            'unary_operator_spaces'           => true,
+            'unary_operator_spaces'           => ['only_dec_inc' => false],
             'use_arrow_functions'             => true,
             'visibility_required'             => ['elements' => ['const', 'method', 'property']],
             'void_return'                     => false, // changes method signature
