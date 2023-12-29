@@ -636,7 +636,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'spaces_inside_parentheses'         => ['space' => 'none'],
             'standardize_increment'             => true,
             'standardize_not_equals'            => true,
-            'statement_indentation'             => true,
+            'statement_indentation'             => ['stick_comment_to_next_continuous_control_statement' => false],
             'static_lambda'                     => true,
             'strict_comparison'                 => true,
             'strict_param'                      => true,
