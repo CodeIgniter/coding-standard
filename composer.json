@@ -25,9 +25,9 @@
         "nexusphp/cs-config": "<=3.18.0"
     },
     "require-dev": {
-        "nexusphp/tachycardia": "^1.3",
+        "nexusphp/tachycardia": "^2.1",
         "phpstan/phpstan": "^1.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^10.5"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
