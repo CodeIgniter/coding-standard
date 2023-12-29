@@ -4,6 +4,14 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.12](https://github.com/CodeIgniter/coding-standard/compare/v1.7.11...v1.7.12) - 2023-12-29
+
+- Bump php-cs-fixer to v3.43
+- Enable other options of `fully_qualified_strict_types`
+- Disable `class_keyword`
+- Disable option for `statement_indentation`
+- Use default for option of `unary_operator_spaces`
+
 ## [v1.7.11](https://github.com/CodeIgniter/coding-standard/compare/v1.7.10...v1.7.11) - 2023-10-13
 
 - Bump to php-cs-fixer v3.35
