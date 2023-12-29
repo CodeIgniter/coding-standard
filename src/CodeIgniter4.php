@@ -95,6 +95,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'space_before_parenthesis'            => true,
                 'inline_constructor_arguments'        => true,
             ],
+            'class_keyword'               => false,
             'class_reference_name_casing' => true,
             'clean_namespace'             => true,
             'combine_consecutive_issets'  => true,
