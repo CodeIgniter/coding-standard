@@ -4,6 +4,14 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.13](https://github.com/CodeIgniter/coding-standard/compare/v1.7.12...v1.7.13) - 2024-01-27
+
+- Update GHA workflows
+- Bump to php-cs-fixer v3.47
+- Disable all new rules in v3.47
+- Apply new options to `phpdoc_align` fixer
+- Bump actions/cache from 3 to 4 (#17)
+
 ## [v1.7.12](https://github.com/CodeIgniter/coding-standard/compare/v1.7.11...v1.7.12) - 2023-12-29
 
 - Bump php-cs-fixer to v3.43
