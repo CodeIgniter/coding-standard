@@ -424,6 +424,8 @@ final class CodeIgniter4 extends AbstractRuleset
                     'phpstan-property',
                     'phpstan-return',
                     'property',
+                    'property-read',
+                    'property-write',
                     'return',
                     'throws',
                     'type',
@@ -453,10 +455,8 @@ final class CodeIgniter4 extends AbstractRuleset
             'phpdoc_no_access'    => true,
             'phpdoc_no_alias_tag' => [
                 'replacements' => [
-                    'property-read'  => 'property',
-                    'property-write' => 'property',
-                    'type'           => 'var',
-                    'link'           => 'see',
+                    'type' => 'var',
+                    'link' => 'see',
                 ],
             ],
             'phpdoc_no_empty_return'       => false,
