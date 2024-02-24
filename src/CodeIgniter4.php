@@ -299,6 +299,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'no_spaces_around_offset'                     => ['positions' => ['inside', 'outside']],
             'no_superfluous_elseif'                       => true,
             'no_superfluous_phpdoc_tags'                  => [
+                'allow_hidden_params' => true,
                 'allow_mixed'         => true,
                 'allow_unused_params' => true,
                 'remove_inheritdoc'   => false,
