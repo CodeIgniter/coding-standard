@@ -424,6 +424,8 @@ final class CodeIgniter4 extends AbstractRuleset
                     'phpstan-param',
                     'phpstan-property',
                     'phpstan-return',
+                    'phpstan-type',
+                    'phpstan-var',
                     'property',
                     'property-read',
                     'property-write',
