@@ -4,6 +4,17 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.14](https://github.com/CodeIgniter/coding-standard/compare/v1.7.13...v1.7.14) - 2024-02-25
+
+- Bump php-cs-fixer to v3.49
+- Enable `string_implicit_backslashes` fixer
+- Add/remove property-read and property-write
+- Enable `phpdoc_list_type`
+- Bump to php-cs-fixer v3.50
+- Enable `allow_hidden_params` option
+- also align `@phpstan-type` and `@phpstan-var`
+- Enable `phpdoc_array_type`
+
 ## [v1.7.13](https://github.com/CodeIgniter/coding-standard/compare/v1.7.12...v1.7.13) - 2024-01-27
 
 - Update GHA workflows
