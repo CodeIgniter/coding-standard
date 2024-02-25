@@ -436,6 +436,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 ],
             ],
             'phpdoc_annotation_without_dot' => false,
+            'phpdoc_array_type'             => true,
             'phpdoc_indent'                 => true,
             'phpdoc_inline_tag_normalizer'  => [
                 'tags' => [
