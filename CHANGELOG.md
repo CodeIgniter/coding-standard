@@ -4,6 +4,10 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.15](https://github.com/CodeIgniter/coding-standard/compare/v1.7.14...v1.7.15) - 2024-03-24
+
+- Remove deprecated option of `nullable_type_declaration_for_default_null_value`
+
 ## [v1.7.14](https://github.com/CodeIgniter/coding-standard/compare/v1.7.13...v1.7.14) - 2024-02-25
 
 - Bump php-cs-fixer to v3.49
