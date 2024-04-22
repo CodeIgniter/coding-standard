@@ -243,7 +243,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'attribute_placement'              => 'standalone',
             ],
             'method_chaining_indentation'            => true,
-            'modernize_strpos'                       => false, // requires 8.0+
+            'modernize_strpos'                       => true,
             'modernize_types_casting'                => true,
             'multiline_comment_opening_closing'      => true,
             'multiline_string_to_heredoc'            => false,
