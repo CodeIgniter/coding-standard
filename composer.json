@@ -22,7 +22,7 @@
         "php": "^7.4 || ^8.0",
         "ext-tokenizer": "*",
         "friendsofphp/php-cs-fixer": "^3.50",
-        "nexusphp/cs-config": "^3.6"
+        "nexusphp/cs-config": "<=3.18.0"
     },
     "require-dev": {
         "nexusphp/tachycardia": "^1.3",
