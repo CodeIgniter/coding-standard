@@ -365,10 +365,11 @@ final class CodeIgniter4 extends AbstractRuleset
                 'imports_order'  => ['class', 'function', 'const'],
                 'case_sensitive' => false,
             ],
-            'ordered_interfaces' => false,
-            'ordered_traits'     => false,
-            'ordered_types'      => false, // requires 8.0+
-            'php_unit_construct' => [
+            'ordered_interfaces'  => false,
+            'ordered_traits'      => false,
+            'ordered_types'       => false, // requires 8.0+
+            'php_unit_attributes' => false, // requires 8.1+
+            'php_unit_construct'  => [
                 'assertions' => [
                     'assertSame',
                     'assertEquals',
