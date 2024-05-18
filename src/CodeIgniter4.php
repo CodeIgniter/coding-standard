@@ -366,9 +366,13 @@ final class CodeIgniter4 extends AbstractRuleset
                 'imports_order'  => ['class', 'function', 'const'],
                 'case_sensitive' => false,
             ],
-            'ordered_interfaces'  => false,
-            'ordered_traits'      => false,
-            'ordered_types'       => false, // requires 8.0+
+            'ordered_interfaces' => false,
+            'ordered_traits'     => false,
+            'ordered_types'      => [
+                'null_adjustment' => 'always_last',
+                'sort_algorithm'  => 'alpha',
+                'case_sensitive'  => false,
+            ],
             'php_unit_attributes' => true,
             'php_unit_construct'  => [
                 'assertions' => [
