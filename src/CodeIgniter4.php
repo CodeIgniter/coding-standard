@@ -344,7 +344,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'normalize_index_brace'                            => true,
             'not_operator_with_space'                          => false,
             'not_operator_with_successor_space'                => true,
-            'nullable_type_declaration'                        => false, // requires 8.0+
+            'nullable_type_declaration'                        => ['syntax' => 'question_mark'],
             'nullable_type_declaration_for_default_null_value' => true,
             'numeric_literal_separator'                        => false,
             'object_operator_without_whitespace'               => true,
