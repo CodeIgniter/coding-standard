@@ -369,7 +369,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'ordered_interfaces'  => false,
             'ordered_traits'      => false,
             'ordered_types'       => false, // requires 8.0+
-            'php_unit_attributes' => false, // requires 8.1+
+            'php_unit_attributes' => true,
             'php_unit_construct'  => [
                 'assertions' => [
                     'assertSame',
