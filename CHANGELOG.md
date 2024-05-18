@@ -4,6 +4,12 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.7.16](https://github.com/CodeIgniter/coding-standard/compare/v1.7.15...v1.7.16) - 2024-05-18
+
+- Disable `php_unit_attributes` for now
+- Fix cs-config to v3.18 for now
+- Disable `ordered_attributes` for PHP <8.0
+
 ## [v1.7.15](https://github.com/CodeIgniter/coding-standard/compare/v1.7.14...v1.7.15) - 2024-03-24
 
 - Remove deprecated option of `nullable_type_declaration_for_default_null_value`
