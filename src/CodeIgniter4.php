@@ -693,7 +693,7 @@ final class CodeIgniter4 extends AbstractRuleset
             ],
         ];
 
-        $this->requiredPHPVersion = 70400;
+        $this->requiredPHPVersion = 80100;
 
         $this->autoActivateIsRiskyAllowed = true;
     }
