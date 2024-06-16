@@ -4,6 +4,10 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.8.0](https://github.com/CodeIgniter/coding-standard/compare/v1.7.16...v1.8.0) - 2024-06-16
+
+- Enable rules for PHP 8.1 (#20)
+
 ## [v1.7.16](https://github.com/CodeIgniter/coding-standard/compare/v1.7.15...v1.7.16) - 2024-05-18
 
 - Disable `php_unit_attributes` for now
