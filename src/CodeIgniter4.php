@@ -243,7 +243,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'attribute_placement'              => 'standalone',
             ],
             'method_chaining_indentation'            => true,
-            'modernize_strpos'                       => false, // requires 8.0+
+            'modernize_strpos'                       => true,
             'modernize_types_casting'                => true,
             'multiline_comment_opening_closing'      => true,
             'multiline_string_to_heredoc'            => false,
@@ -344,13 +344,13 @@ final class CodeIgniter4 extends AbstractRuleset
             'normalize_index_brace'                            => true,
             'not_operator_with_space'                          => false,
             'not_operator_with_successor_space'                => true,
-            'nullable_type_declaration'                        => false, // requires 8.0+
+            'nullable_type_declaration'                        => ['syntax' => 'question_mark'],
             'nullable_type_declaration_for_default_null_value' => true,
             'numeric_literal_separator'                        => false,
             'object_operator_without_whitespace'               => true,
             'octal_notation'                                   => false, // requires 8.1+
             'operator_linebreak'                               => ['only_booleans' => true, 'position' => 'beginning'],
-            'ordered_attributes'                               => false, // requires 8.0+
+            'ordered_attributes'                               => ['order' => [], 'sort_algorithm' => 'alpha'],
             'ordered_class_elements'                           => [
                 'order' => [
                     'use_trait',
@@ -366,10 +366,14 @@ final class CodeIgniter4 extends AbstractRuleset
                 'imports_order'  => ['class', 'function', 'const'],
                 'case_sensitive' => false,
             ],
-            'ordered_interfaces'  => false,
-            'ordered_traits'      => false,
-            'ordered_types'       => false, // requires 8.0+
-            'php_unit_attributes' => false, // requires 8.1+
+            'ordered_interfaces' => false,
+            'ordered_traits'     => false,
+            'ordered_types'      => [
+                'null_adjustment' => 'always_last',
+                'sort_algorithm'  => 'alpha',
+                'case_sensitive'  => false,
+            ],
+            'php_unit_attributes' => true,
             'php_unit_construct'  => [
                 'assertions' => [
                     'assertSame',
@@ -689,7 +693,7 @@ final class CodeIgniter4 extends AbstractRuleset
             ],
         ];
 
-        $this->requiredPHPVersion = 70400;
+        $this->requiredPHPVersion = 80100;
 
         $this->autoActivateIsRiskyAllowed = true;
     }
