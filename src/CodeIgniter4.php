@@ -373,8 +373,10 @@ final class CodeIgniter4 extends AbstractRuleset
                 'sort_algorithm'  => 'alpha',
                 'case_sensitive'  => false,
             ],
-            'php_unit_attributes' => true,
-            'php_unit_construct'  => [
+            'php_unit_attributes' => [
+                'keep_annotations' => false,
+            ],
+            'php_unit_construct' => [
                 'assertions' => [
                     'assertSame',
                     'assertEquals',
