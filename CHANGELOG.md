@@ -4,6 +4,11 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.8.2](https://github.com/CodeIgniter/coding-standard/compare/v1.8.1...v1.8.2) - 2024-11-20
+
+- Add `case` to ordered_class_elements order
+- Bump to phpstan 2.0
+
 ## [v1.8.1](https://github.com/CodeIgniter/coding-standard/compare/v1.8.0...v1.8.1) - 2024-08-05
 
 - Add `keep_annotations` option for `php_unit_attributes`
