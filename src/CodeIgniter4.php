@@ -354,6 +354,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'ordered_class_elements'                           => [
                 'order' => [
                     'use_trait',
+                    'case',
                     'constant',
                     'property',
                     'method',
