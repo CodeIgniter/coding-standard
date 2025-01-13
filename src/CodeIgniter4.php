@@ -209,7 +209,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'fix_inline'     => true,
                 'replacements'   => ['inheritDocs' => 'inheritDoc'],
             ],
-            'get_class_to_class_keyword' => false,
+            'get_class_to_class_keyword' => true,
             'global_namespace_import'    => [
                 'import_constants' => false,
                 'import_functions' => false,
