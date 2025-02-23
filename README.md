@@ -5,9 +5,9 @@
 [![PHPStan Static Analysis](https://github.com/CodeIgniter/coding-standard/actions/workflows/test-phpstan.yml/badge.svg)](https://github.com/CodeIgniter/coding-standard/actions/workflows/test-phpstan.yml)
 [![PHPStan level](https://img.shields.io/badge/PHPStan-max%20level-brightgreen)](phpstan.neon.dist)
 [![Coverage Status](https://coveralls.io/repos/github/CodeIgniter/coding-standard/badge.svg?branch=develop)](https://coveralls.io/github/CodeIgniter/coding-standard?branch=develop)
-[![Latest Stable Version](http://poser.pugx.org/codeigniter/coding-standard/v)](https://packagist.org/packages/codeigniter/coding-standard)
+[![Latest Stable Version](http://poser.pugx.org/codeigniter/coding-standard/v)](//packagist.org/packages/codeigniter/coding-standard)
 [![License](https://img.shields.io/github/license/codeigniter/coding-standard)](LICENSE)
-[![Total Downloads](http://poser.pugx.org/codeigniter/coding-standard/downloads)](https://packagist.org/packages/codeigniter/coding-standard)
+[![Total Downloads](http://poser.pugx.org/codeigniter/coding-standard/downloads)](//packagist.org/packages/codeigniter/coding-standard)
 
 This library holds the official coding standards of CodeIgniter based
 on [PHP CS Fixer][1] and powered by [Nexus CS Config][2].
