@@ -155,7 +155,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'fopen_flags'                            => ['b_mode' => true],
             'full_opening_tag'                       => true,
             'fully_qualified_strict_types'           => [
-                'import_symbols'                        => false,
+                'import_symbols'                        => true,
                 'leading_backslash_in_global_namespace' => false,
                 'phpdoc_tags'                           => [
                     'param',
