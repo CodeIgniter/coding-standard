@@ -248,12 +248,14 @@ final class CodeIgniter4 extends AbstractRuleset
             'modernize_strpos'                       => ['modernize_stripos' => true],
             'modernize_types_casting'                => true,
             'multiline_comment_opening_closing'      => true,
+            'multiline_promoted_properties'          => false,
             'multiline_string_to_heredoc'            => false,
             'multiline_whitespace_before_semicolons' => ['strategy' => 'no_multi_line'],
             'native_constant_invocation'             => false,
             'native_function_casing'                 => true,
             'native_function_invocation'             => false,
             'native_type_declaration_casing'         => true,
+            'new_expression_parentheses'             => ['use_parentheses' => true],
             'new_with_parentheses'                   => [
                 'named_class'     => true,
                 'anonymous_class' => true,
@@ -663,6 +665,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'standardize_not_equals'            => true,
             'statement_indentation'             => ['stick_comment_to_next_continuous_control_statement' => false],
             'static_lambda'                     => true,
+            'static_private_method'             => false,
             'strict_comparison'                 => true,
             'strict_param'                      => true,
             'string_implicit_backslashes'       => [
