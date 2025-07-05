@@ -4,6 +4,11 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.8.6](https://github.com/CodeIgniter/coding-standard/compare/v1.8.5...v1.8.6) - 2025-07-05
+
+- Bump to php-cs-fixer v3.76
+- Test on PHP 8.4
+
 ## [v1.8.5](https://github.com/CodeIgniter/coding-standard/compare/v1.8.4...v1.8.5) - 2025-05-02
 
 - Enable `import_symbols` option in `fully_qualified_strict_types`
