@@ -546,6 +546,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'phpdoc_single_line_var_spacing'                => true,
             'phpdoc_summary'                                => false,
             'phpdoc_tag_casing'                             => ['tags' => ['inheritDoc']],
+            'phpdoc_tag_no_named_arguments'                 => false,
             'phpdoc_tag_type'                               => ['tags' => ['inheritDoc' => 'inline']],
             'phpdoc_to_comment'                             => false,
             'phpdoc_to_param_type'                          => false,
