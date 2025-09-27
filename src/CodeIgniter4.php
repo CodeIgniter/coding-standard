@@ -479,8 +479,9 @@ final class CodeIgniter4 extends AbstractRuleset
             'phpdoc_no_access'    => true,
             'phpdoc_no_alias_tag' => [
                 'replacements' => [
-                    'type' => 'var',
-                    'link' => 'see',
+                    'const' => 'var',
+                    'link'  => 'see',
+                    'type'  => 'var',
                 ],
             ],
             'phpdoc_no_empty_return'       => false,
