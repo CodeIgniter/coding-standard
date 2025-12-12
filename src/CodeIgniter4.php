@@ -428,6 +428,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'php_unit_test_case_static_method_calls' => [
                 'call_type' => 'this',
                 'methods'   => [],
+                'target'    => '10.0',
             ],
             'php_unit_test_class_requires_covers' => false,
             'phpdoc_add_missing_param_annotation' => ['only_untyped' => true],
@@ -679,6 +680,7 @@ final class CodeIgniter4 extends AbstractRuleset
             ],
             'string_length_to_empty'         => true,
             'string_line_ending'             => true,
+            'stringable_for_to_string'       => false,
             'switch_case_semicolon_to_colon' => true,
             'switch_case_space'              => true,
             'switch_continue_to_break'       => true,
