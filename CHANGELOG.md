@@ -4,6 +4,10 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.8.9](https://github.com/CodeIgniter/coding-standard/compare/v1.8.8...v1.8.9) - 2025-12-12
+
+- Bump dependencies
+
 ## [v1.8.8](https://github.com/CodeIgniter/coding-standard/compare/v1.8.7...v1.8.8) - 2025-09-27
 
 - Add but disable`phpdoc_tag_no_named_arguments`
