@@ -32,6 +32,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'array_push'                               => true,
             'array_syntax'                             => ['syntax' => 'short'],
             'assign_null_coalescing_to_coalesce_equal' => true,
+            'attribute_block_no_spaces'                => true,
             'attribute_empty_parentheses'              => false,
             'backtick_to_shell_exec'                   => true,
             'binary_operator_spaces'                   => [
@@ -245,6 +246,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'attribute_placement'              => 'standalone',
             ],
             'method_chaining_indentation'            => true,
+            'modern_serialization_methods'           => true,
             'modernize_strpos'                       => ['modernize_stripos' => true],
             'modernize_types_casting'                => true,
             'modifier_keywords'                      => ['elements' => ['const', 'method', 'property']],
@@ -297,6 +299,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'no_multiple_statements_per_line'             => true,
             'no_null_property_initialization'             => true,
             'no_php4_constructor'                         => true,
+            'no_redundant_readonly_property'              => true,
             'no_short_bool_cast'                          => true,
             'no_singleline_whitespace_before_semicolons'  => true,
             'no_space_around_double_colon'                => true,
@@ -558,6 +561,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'phpdoc_trim'                                   => true,
             'phpdoc_trim_consecutive_blank_line_separation' => true,
             'phpdoc_types'                                  => ['groups' => ['simple', 'alias', 'meta']],
+            'phpdoc_types_no_duplicates'                    => true,
             'phpdoc_types_order'                            => [
                 'null_adjustment' => 'always_last',
                 'sort_algorithm'  => 'alpha',
