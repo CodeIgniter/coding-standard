@@ -479,7 +479,7 @@ final class CodeIgniter4 extends AbstractRuleset
                 'class'        => 'multi',
                 'const'        => 'multi',
                 'method'       => 'multi',
-                'other'        => 'single',
+                'other'        => null,
                 'property'     => 'multi',
                 'trait_import' => 'multi',
             ],
