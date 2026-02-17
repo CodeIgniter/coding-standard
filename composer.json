@@ -19,15 +19,15 @@
         "slack": "https://codeigniterchat.slack.com"
     },
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "ext-tokenizer": "*",
         "friendsofphp/php-cs-fixer": "^3.94",
-        "nexusphp/cs-config": "^3.27"
+        "nexusphp/cs-config": "^3.28"
     },
     "require-dev": {
         "nexusphp/tachycardia": "^2.4",
         "phpstan/phpstan": "^2.1",
-        "phpunit/phpunit": "^10.5 || ^11.5"
+        "phpunit/phpunit": "^11.5 || ^12.5"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

@@ -431,7 +431,7 @@ final class CodeIgniter4 extends AbstractRuleset
             'php_unit_test_case_static_method_calls' => [
                 'call_type' => 'this',
                 'methods'   => [],
-                'target'    => '10.0',
+                'target'    => '11.0',
             ],
             'php_unit_test_class_requires_covers' => false,
             'phpdoc_add_missing_param_annotation' => ['only_untyped' => true],
