@@ -21,7 +21,7 @@
     "require": {
         "php": "^8.1",
         "ext-tokenizer": "*",
-        "friendsofphp/php-cs-fixer": "^3.93",
+        "friendsofphp/php-cs-fixer": "^3.94",
         "nexusphp/cs-config": "^3.27"
     },
     "require-dev": {
