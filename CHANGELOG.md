@@ -4,6 +4,14 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.9.0](https://github.com/CodeIgniter/coding-standard/compare/v1.8.9...v1.9.0) - 2026-02-17
+
+- Add new fixers of php-cs-fixer v3.93
+- Enable new options of `phpdoc_line_span`
+- Rename configs
+- Bump to PHP 8.2
+- Cleanup workflows
+
 ## [v1.8.9](https://github.com/CodeIgniter/coding-standard/compare/v1.8.8...v1.8.9) - 2025-12-12
 
 - Bump dependencies
