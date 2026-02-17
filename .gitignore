@@ -1,9 +1,8 @@
-.vscode/
-.idea/
-build/
-vendor/
-composer.lock
-.php-cs-fixer.php
-*.neon
-*.cache
-phpunit.xml
+/.vscode/
+/.idea/
+/build/
+/vendor/
+/composer.lock
+/.php-cs-fixer.php
+/phpstan.neon
+/phpunit.xml
