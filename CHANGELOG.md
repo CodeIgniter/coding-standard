@@ -4,6 +4,11 @@ All notable changes to this library will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.9.2](https://github.com/CodeIgniter/coding-standard/compare/v1.9.1...v1.9.2) - 2026-04-12
+
+- Bump to php-cs-fixer v3.95
+- Security harden the workflows
+
 ## [v1.9.1](https://github.com/CodeIgniter/coding-standard/compare/v1.9.0...v1.9.1) - 2026-02-17
 
 - Set `other` option of `phpdoc_line_span` to `null` for now
