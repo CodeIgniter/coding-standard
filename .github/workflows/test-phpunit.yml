@@ -19,7 +19,7 @@ on:
 jobs:
   unit-tests:
     name: PHPUnit Tests [PHP ${{ matrix.php-version }}]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     strategy:
       fail-fast: false
@@ -32,10 +32,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f # v2.37.0
         with:
           php-version: ${{ matrix.php-version }}
           extensions: tokenizer
@@ -46,7 +48,7 @@ jobs:
         run: echo "COMPOSER_CACHE_FILES_DIR=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
       - name: Cache composer dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
         with:
           path: ${{ steps.composer-cache.outputs.COMPOSER_CACHE_FILES_DIR }}
           key: composer-${{ matrix.php-version }}-${{ hashFiles('**/composer.*') }}
@@ -58,19 +60,20 @@ jobs:
         run: composer config --global github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
-        run: composer update --ansi
+        run: |
+          composer update --ansi
+          composer audit --ansi
 
       - name: Run Coding Standards Test Suite
         run: vendor/bin/phpunit --colors=always
 
       - name: Upload coverage results to Coveralls
-        run: |
-          composer global require --ansi php-coveralls/php-coveralls
-          php-coveralls --verbose --coverage_clover=build/phpunit/logs/clover.xml --json_path=build/phpunit/logs/coverage-upload.json
-        env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COVERALLS_PARALLEL: true
-          COVERALLS_FLAG_NAME: PHP ${{ matrix.php-version }}
+        uses: coverallsapp/github-action@5cbfd81b66ca5d10c19b062c04de0199c215fb6e # v2.37.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/phpunit/logs/clover.xml
+          parallel: true
+          flag-name: PHP ${{ matrix.php-version }}
 
   coveralls-upload:
     name: Trigger parallel build webhook on Coveralls
@@ -80,7 +83,7 @@ jobs:
 
     steps:
       - name: Upload to Coveralls API
-        uses: coverallsapp/github-action@master
+        uses: coverallsapp/github-action@5cbfd81b66ca5d10c19b062c04de0199c215fb6e # v2.37.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           parallel-finished: true
