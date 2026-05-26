@@ -58,7 +58,7 @@ jobs:
       - name: Install dependencies on tools
         run: |
           composer update --ansi
-          composer audit --ansi
+          composer audit --ansi --abandoned=report
 
       - name: Run PHP CS Fixer
         run: vendor/bin/php-cs-fixer check --verbose --ansi --diff

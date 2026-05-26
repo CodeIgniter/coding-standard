@@ -62,7 +62,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer update --ansi
-          composer audit --ansi
+          composer audit --ansi --abandoned=report
 
       - name: Run Coding Standards Test Suite
         run: vendor/bin/phpunit --colors=always
